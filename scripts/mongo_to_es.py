@@ -7,7 +7,7 @@ import json
 
 # Config via env
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
-MONGO_DB = os.environ.get("MONGO_DB", "harassment")  # adjust if your DB is 'harassment'
+MONGO_DB = os.environ.get("MONGO_DB", "harassment")  
 MONGO_COLL = os.environ.get("MONGO_COLLECTION", "posts")
 
 ES_HOST = os.environ.get("ES_HOST", "http://localhost:9200")
