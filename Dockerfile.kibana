@@ -1,0 +1,8 @@
+FROM docker.elastic.co/kibana/kibana:7.17.9
+
+COPY kibana_custom_logo/logo.png /usr/share/kibana/src/legacy/ui/public/assets/favicons/favicon.png
+COPY kibana_custom_logo/logo.png /usr/share/kibana/src/core/public/core_app/images/elastic_brand_white.svg
+COPY kibana_custom_logo/logo.png /usr/share/kibana/src/core/public/core_app/images/elastic_brand.svg
+COPY kibana_custom_logo/logo.png /usr/share/kibana/src/core/public/assets/kibana.svg
+
+RUN rm -rf /usr/share/kibana/optimize/bundles
